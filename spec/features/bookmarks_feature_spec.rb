@@ -1,10 +1,7 @@
-feature "Bookmarks displayed to user" do
-  scenario 'viewing bookmarks' do
+feature "Content displayed correctly to user" do
+  scenario 'title displayed' do
     visit('/bookmarks')
-    empty
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-    connection.exec("INSERT INTO bookmarks VALUES (1,'http://www.google.com');")
-    expect(page).to have_content('http://www.google.com')
+    expect(page).to have_content('Bookmarks')
   end
 end
 

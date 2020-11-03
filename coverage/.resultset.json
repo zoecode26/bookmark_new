@@ -13,7 +13,6 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           null
@@ -21,9 +20,6 @@
       },
       "/Users/zoethomas/Projects/bookmark_new/spec/features/bookmarks_feature_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -44,6 +40,6 @@
         ]
       }
     },
-    "timestamp": 1604434198
+    "timestamp": 1604437452
   }
 }
