@@ -1,0 +1,8 @@
+<h1> Bookmarks </h1>
+<% @bookmark_list.each do |bookmark| %>
+  <h3> <%= bookmark %> </h3>
+<% end %>
+
+<form action="/form" method="get">
+  <button type="submit" name="button">Add bookmark</button>
+</form>
