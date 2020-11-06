@@ -1,6 +1,13 @@
 <h1> Bookmarks </h1>
 <% @bookmark_list.each do |bookmark| %>
-  <h3> <%= bookmark %> </h3>
+  <form action="/button" method="get">
+    <a href=<%="#{bookmark.url}" %>> <%=bookmark.title%> </a>
+    <input type="hidden" name="id" value=<%= bookmark.id %>>
+    <input type="hidden" name="title" value=<%= bookmark.title %>>
+    <input type="hidden" name="url" value=<%= bookmark.url %>>
+    <input type="submit" name="action" value="Delete">
+    <input type="submit" name="action" value="Edit"<br>
+  </form>
 <% end %>
 
 <form action="/form" method="get">

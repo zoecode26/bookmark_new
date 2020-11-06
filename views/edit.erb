@@ -1,0 +1,8 @@
+<form action="/update" method="post">
+  <input type="hidden" name="id" value=<%= @id %>>
+  <label for="title">Website name:</label>
+  <input type="text" name="title" value=<%=@title%>>
+  <label for="url">Website URL:</label>
+  <input type="text" name="url" value=<%=@url%>>
+  <input type="submit" value ="Submit">
+</form>

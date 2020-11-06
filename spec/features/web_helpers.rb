@@ -1,4 +1,4 @@
 def empty
-  connection = PG.connect(dbname: 'bookmark_manager_test')
-  connection.exec("TRUNCATE TABLE bookmarks;")
+  DatabaseConnection.setup('bookmark_manager_test')
+  DatabaseConnection.query("TRUNCATE TABLE bookmarks;")
 end
